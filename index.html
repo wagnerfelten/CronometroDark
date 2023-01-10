@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./public/img/icons8-cronômetro-80.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/dark.css">
+    
+    <title>Conêmetro Dark</title>
+  </head>
+
+  <body>
+    <nav class="nav-container">
+      <div class="day">
+        <button id="btn1" class="dark">
+          <img src="./public/img/Dia.svg" alt="Dia" />
+        </button>
+      </div>
+
+      <div class="night hide">
+        <button id="btn2" class="darkModel">
+          <img src="./public/img/Noite.svg" alt="Noie" /></button>
+      </div>
+    </nav>
+
+    <main class="main-container">
+      <section>
+        <div class="watch">
+          <span>25:00</span>
+        </div>
+
+        <div class="buttons" onclick="minSet()">
+          <button class="play" onclick="start()">
+            <img src="./public/img/play.png" alt="play" />
+          </button>
+
+          <button class="stop" onclick="stop()">
+            <img src="./public/img/stop.svg" alt="stop" />
+          </button>
+
+          <button class="more" onclick="incrementMin()">
+            <img src="./public/img/+.svg" alt="+" />
+          </button>
+
+          <button class="less" onclick="decreases()">
+            <img src="./public/img/-.svg" alt="-" />
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="buttons2">
+          <button class="tree">
+            <img src="./public/img/floresta.svg" alt="arvore" />
+          </button>
+
+          <button class="rain">
+            <img src="./public/img/icons8-chuva-64.png" alt="chuva" />
+          </button>
+
+          <button class="house">
+            <img src="./public/img/casa.svg" alt="casa" />
+          </button>
+
+          <button class="fire">
+            <img src="./public/img/fogo.svg" alt="fogo" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <audio class="audioHouse" src="./public/sounds/Cafeteria.wav"></audio>
+    <audio class="audioRain" src="./public/sounds/Chuva.wav"></audio>
+    <audio class="audioTree" src="./public/sounds/Floresta.wav"></audio>
+    <audio class="audioFire" src="./public/sounds/Lareira.wav"></audio>
+
+    <script src="./src/js/cron.js"></script>
+    <script src="./src/js/sounds.js"></script>
+    <script src="./src/js/dark.js"></script>
+  </body>
+</html>
